@@ -1,0 +1,168 @@
+body,
+html {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+#container {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+#bg img {
+  width: 100%;
+}
+
+#desc {
+  color: white;
+  left: 70px;
+  position: absolute;
+  top: 150px;
+  z-index: 2;
+  font-size: 50px;
+}
+
+div p:not(:last-child) {
+  font-size: 50px;
+}
+
+#ft {
+  font-size: 20px;
+}
+
+.d1 {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0;
+  padding: 0 20px;
+  margin-left: 0;
+  display: flex;
+}
+
+.b1 img {
+  max-width: 80%;
+  height: auto;
+}
+
+h1 {
+  margin-left: 0;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(28, 171, 228);
+}
+
+/* footer */
+footer img {
+  width: 150px;
+  border-radius: 50%;
+  margin-left: 20px;
+  height: 150px;
+}
+
+footer {
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+
+footer h1 {
+  margin-bottom: 20px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#footer {
+  text-align: right;
+  color: white;
+  margin-top: 40px;
+  padding-right: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #text {
+    top: 100px;
+    font-size: 10px;
+    left: 20px;
+  }
+
+  div p:not(:last-child) {
+    font-size: 20px;
+  }
+
+  #ft {
+    font-size: 12px;
+  }
+
+  .d1 {
+    flex-wrap: wrap;
+    margin-right: 10px;
+    padding: 0 20px;
+    margin-left: 10px;
+  }
+
+  .b1 {
+    margin-bottom: 20px;
+    flex-basis: 45%;
+  }
+
+  h1 {
+    padding-left: 10px;
+    margin-top: 50px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  footer img {
+    margin-left: 0px;
+  }
+
+  footer h1 {
+    margin-left: 10px;
+  }
+
+  #footer {
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .d1 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #cart span {
+    font-size: 7px;
+  }
+
+  #cart img {
+    width: 22px;
+  }
+
+  #c1 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
